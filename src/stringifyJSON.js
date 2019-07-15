@@ -12,7 +12,7 @@ var stringifyJSON = function(obj) {
   }
   // number
   if (typeof obj === 'number') {
-    return '"' + obj + '"';
+    return obj.toString();
   }
   // string
   // boolean
