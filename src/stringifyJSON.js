@@ -13,5 +13,5 @@ var stringifyJSON = function(obj) {
   // array
   // object
   // undefined
-  // function
+  // functions
 };
