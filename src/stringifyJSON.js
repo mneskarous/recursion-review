@@ -16,6 +16,13 @@ var stringifyJSON = function(obj) {
   }
   // string
   // boolean
+  if (typeof obj === 'boolean') {
+    if (obj) {
+      return 'true';
+    } else {
+      return 'false';
+    }
+  }
   // array
   // object
   // undefined
