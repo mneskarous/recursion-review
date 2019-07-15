@@ -27,6 +27,21 @@ var stringifyJSON = function(obj) {
     }
   }
   // array
+  if (Array.isArray(obj)) {
+    if (obj.length === 0) {
+      return '[]';
+    }
+    // var item = '[';
+    // for (var i = 0; i < obj.length; i++) {
+    //   item += stringifyJSON(obj[i]);
+    // }
+    // return item + ']';
+    var output = [];
+    for (var i = 0; i < obj.length; i++) {
+      output.push(stringifyJSON(obj[i]));
+    }
+    return '[' + output.join(',') + ']';
+  }
   // object
   // undefined
   // functions
