@@ -5,4 +5,13 @@
 
 var stringifyJSON = function(obj) {
   // your code goes here
+  // var arr = [1, {a: 1}, 3, 4, 5,];
+  // null
+  // number
+  // string
+  // boolean
+  // array
+  // object
+  // undefined
+  // function
 };
