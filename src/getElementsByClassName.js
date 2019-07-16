@@ -7,4 +7,19 @@
 var getElementsByClassName = function(className
 ) {
   // your code here
+  var output = [];
+  var element = document.body;
+  var iterateOverBody = function(element) {
+    if(element.classList && element.classList.contains(className)){
+      output.push(element);
+    }
+    if(element.childNodes) {
+      for(var i = 0; i < element.childNodes.length; i++) {
+        iterateOverBody(element.childNodes[i]);
+      }
+    }
+  }
+  iterateOverBody(element);
+  return output;
+
 };
